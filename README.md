@@ -1,4 +1,6 @@
 Log4j Vulnerability (CVE-2021-44228)
+----------------------
+
 A security vulnerability, identified as CVE-2021-44228, has been discovered in certain versions of the Log4j library. In this proof of concept (poc) the explotetion of the log4j vulnerability is combined with another misconfiguration which allow an attacker to gain complete control of a victim host.
 
 The vulnerability is caused by a flaw in the way Log4j handles deserialization of untrusted data. An attacker could exploit this vulnerability by injecting malicious payloads into the log data, which would then be deserialized by Log4j. If the victim host has a vulnerable version of Log4j and a misconfigured Java Object Input Stream (OIS) deserialization, the attacker could potentially execute arbitrary code with the same privileges as the user running the application.
@@ -14,6 +16,7 @@ In addition to upgrading Log4j, it is important to ensure that the OIS deseriali
 Please also review your system and verify that you are not using any vulnerable version of log4j and also check the deserialization configuration of your application.
 
 It is important to keep your software up to date, and to be aware of any security vulnerabilities that may affect your systems. If you suspect that your host may have been compromised, it is important to take immediate action to contain the damage and prevent further attacks.
+
 ----------------------
 
 As a PoC, a python file that automates the process is been created. 
