@@ -72,8 +72,10 @@ If you would like to further develop the project you can use Intellij IDE which 
 Once you have remote code execution enable:
 -press CTRL+D to change from local to remote
 Execute the following commands to make a directory and copy the victim's host disk:
+```bash
 mkdir -p /mnt/pwned
 mount /dev/sda1 /mnt/pwned
+```
 
 
 Getting the Java version.
