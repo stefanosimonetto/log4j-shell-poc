@@ -60,7 +60,7 @@ Dockerized vulnerable application
 A Dockerfile is been added with the vulnerable webapp. You can use this by following the steps below:
 ```c
 1: docker build -t log4j-shell-poc .
-2: docker run --priviliged --network host log4j-shell-poc
+2: docker run --privileged --network host log4j-shell-poc
 ```
 Once it is running, you can access it on localhost:8080
 
